@@ -23,8 +23,11 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AccueilComponent } from './accueil/accueil.component';
-import { ViecampusComponent } from './viecampus/viecampus.component';
-import { DevdurComponent } from './devdur/devdur.component';
+import { ContactComponent } from './contact/contact.component';
+import { CampusComponent } from './campus/campus.component';
+import { ConnexionComponent } from './connexion/connexion.component';
+import { EcologieComponent } from './ecologie/ecologie.component';
+import { InternationalComponent } from './international/international.component';
 
 @NgModule({
   imports: [
@@ -42,10 +45,10 @@ import { DevdurComponent } from './devdur/devdur.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AccueilComponent,
-    ViecampusComponent,
-    DevdurComponent,
-
+    CampusComponent,
+    ConnexionComponent,
+    EcologieComponent,
+    InternationalComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
