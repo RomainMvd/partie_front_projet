@@ -9,8 +9,11 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { AccueilComponent } from 'app/accueil/accueil.component';
-import { ViecampusComponent } from 'app/viecampus/viecampus.component';
-import { DevdurComponent } from 'app/devdur/devdur.component';
+import { ContactComponent } from 'app/contact/contact.component';
+import { CampusComponent } from 'app/campus/campus.component';
+import { EcologieComponent } from 'app/ecologie/ecologie.component';
+import { ConnexionComponent } from 'app/connexion/connexion.component';
+import { InternationalComponent } from 'app/international/international.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -55,12 +58,10 @@ export const AdminLayoutRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
-    { path: 'dashboard',      component: DevdurComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'accueil',      component: AccueilComponent },
+    { path: 'connexion',   component: ConnexionComponent },
+    { path: 'international',          component: InternationalComponent },
+    { path: 'vie-sur-le-campus',           component: CampusComponent },
+    { path: 'engagements-ecologiques',        component: EcologieComponent },
+    { path: 'contact',        component: ContactComponent },
 ];
