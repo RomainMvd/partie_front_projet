@@ -14,6 +14,7 @@ import { CampusComponent } from 'app/campus/campus.component';
 import { EcologieComponent } from 'app/ecologie/ecologie.component';
 import { ConnexionComponent } from 'app/connexion/connexion.component';
 import { InternationalComponent } from 'app/international/international.component';
+import { ProfilComponent } from 'app/profil/profil.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -64,4 +65,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'vie-sur-le-campus',           component: CampusComponent },
     { path: 'engagements-ecologiques',        component: EcologieComponent },
     { path: 'contact',        component: ContactComponent },
+    { path: 'profil',        component: ProfilComponent },
 ];

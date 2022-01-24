@@ -28,6 +28,15 @@ import { CampusComponent } from './campus/campus.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { EcologieComponent } from './ecologie/ecologie.component';
 import { InternationalComponent } from './international/international.component';
+import { ListeCoursComponent } from './liste-cours/liste-cours.component';
+import { ProfilComponent } from './profil/profil.component';
+import { ListeEnseignantsComponent } from './liste-enseignants/liste-enseignants.component';
+import { EdtComponent } from './edt/edt.component';
+import { ReleveNoteComponent } from './releve-note/releve-note.component';
+import { DocumentsAdministratifsComponent } from './documents-administratifs/documents-administratifs.component';
+import { ExamenComponent } from './examen/examen.component';
+import { ForumComponent } from './forum/forum.component';
+import { OffresStageEmploiComponent } from './offres-stage-emploi/offres-stage-emploi.component';
 
 @NgModule({
   imports: [
@@ -49,6 +58,15 @@ import { InternationalComponent } from './international/international.component'
     ConnexionComponent,
     EcologieComponent,
     InternationalComponent,
+    ListeCoursComponent,
+    ProfilComponent,
+    ListeEnseignantsComponent,
+    EdtComponent,
+    ReleveNoteComponent,
+    DocumentsAdministratifsComponent,
+    ExamenComponent,
+    ForumComponent,
+    OffresStageEmploiComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

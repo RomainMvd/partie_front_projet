@@ -40,7 +40,6 @@ import { AccueilComponent } from 'app/accueil/accueil.component';
     TypographyComponent,
     IconsComponent,
     MapsComponent,
-    NotificationsComponent,
     UpgradeComponent,
     AccueilComponent,
     ContactComponent,
