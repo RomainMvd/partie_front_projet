@@ -7,11 +7,41 @@
 </div>
 <div class="sidebar-wrapper">
     <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" [routerLink]="'/accueil'" >
+                <i class="material-icons">home</i>
+                <p>
+                    Accueil
+                </p>
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    <i class="material-icons">person</i>
+                <p>Profil
+                </p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/profil'" >Accueil</a>                        
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/edt'" >Emploi Du Temps</a>                        
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/relevenotes'" >Relevé de notes</a>                        
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/documentsadministratifs'" >Documents administratifs</a>                        
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/examenenligne'" >Examen en ligne</a>                        
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/listecours'" >Cours</a>                        
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/listeenseignants'" >Enseignants</a>                        
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/offresstageemplois'" >Emplois/Stages</a>  
+                <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/forum'" >Forum</a>                        
+                      
+
+            </div>
+        </li>
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
             <a class="nav-link" [routerLink]="[menuItem.path]">
                 <i class="material-icons">{{menuItem.icon}}</i>
                 <p>{{menuItem.title}}</p>
             </a>
         </li>
-    </ul>
+    
+
+
+</ul>
 </div>
