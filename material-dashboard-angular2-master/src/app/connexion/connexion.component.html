@@ -1,1 +1,23 @@
-<p>connexion works!</p>
+<html>
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+        <link rel="stylesheet" href="connexion.component.css" media="screen" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            <!-- zone de connexion -->
+            
+            <form action="verification.php" method="POST">
+                <h1 style="border-bottom-style:solid;  border-image: linear-gradient(110deg, #fff, rgb(128, 165, 235), midnightblue) 1;">Connexion</h1>
+                <label style="padding-top:36px;"><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+                <input type="submit" id='submit' value='LOGIN' >
+            </form>
+        </div>
+    </body>
+</html>
