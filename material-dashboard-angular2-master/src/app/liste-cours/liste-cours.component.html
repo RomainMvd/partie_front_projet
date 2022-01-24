@@ -1,1 +1,29 @@
-<p>liste-cours works!</p>
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="card-header" style="background-color:rgb(40, 40, 83);">
+                        <h2 class="card-title mt-0" style="color:#fff;"> Liste des matières</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" style="background: linear-gradient(110deg, rgb(33, 33, 151), royalblue, #fff);">
+                                <tr routerLinkActive="active" *ngFor="let matiere of matieres" style=" padding: 20px;border-bottom-style:solid; border-bottom-width:15px; border-color:aliceblue;">
+                                    <td style="table-layout:auto; width:33%;">
+                                        <a [routerLink]="[matiere.path]">
+                                            <p style="font-size: large; font-weight: bold; color:#fff;margin:auto;">{{matiere.title}}</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <p style="color:#fff;margin:auto;">Prof</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
