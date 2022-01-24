@@ -15,6 +15,14 @@ import { EcologieComponent } from 'app/ecologie/ecologie.component';
 import { ConnexionComponent } from 'app/connexion/connexion.component';
 import { InternationalComponent } from 'app/international/international.component';
 import { ProfilComponent } from 'app/profil/profil.component';
+import { EdtComponent } from 'app/edt/edt.component';
+import { OffresStageEmploiComponent } from 'app/offres-stage-emploi/offres-stage-emploi.component';
+import { ExamenComponent } from 'app/examen/examen.component';
+import { DocumentsAdministratifsComponent } from 'app/documents-administratifs/documents-administratifs.component';
+import { ReleveNoteComponent } from 'app/releve-note/releve-note.component';
+import { ForumComponent } from 'app/forum/forum.component';
+import { ListeEnseignantsComponent } from 'app/liste-enseignants/liste-enseignants.component';
+import { ListeCoursComponent } from 'app/liste-cours/liste-cours.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -66,4 +74,12 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'engagements-ecologiques',        component: EcologieComponent },
     { path: 'contact',        component: ContactComponent },
     { path: 'profil',        component: ProfilComponent },
+    { path: 'edt',        component: EdtComponent },
+    { path: 'listecours',        component: ListeCoursComponent },
+    { path: 'listeenseignants',        component: ListeEnseignantsComponent },
+    { path: 'forum',        component: ForumComponent },
+    { path: 'relevenotes',        component: ReleveNoteComponent },
+    { path: 'documentsadministratifs',        component: DocumentsAdministratifsComponent },
+    { path: 'examenenligne',        component: ExamenComponent },
+    { path: 'offresstageemplois',        component: OffresStageEmploiComponent },
 ];
