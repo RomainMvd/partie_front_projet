@@ -79,7 +79,7 @@ import { CandidatureComponent } from 'app/candidature/candidature.component';
     MoyStatsComponent,
     OffresStageEmploiComponent,
     ProfilComponent,
-    ReleveNoteComponent,
+    ReleveNoteComponent,  
     GestionOffresComponent,
     GestionCandidatureComponent,
     CandidatureComponent,

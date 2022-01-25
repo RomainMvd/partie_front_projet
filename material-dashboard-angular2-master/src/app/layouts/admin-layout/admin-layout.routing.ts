@@ -30,6 +30,7 @@ import { AdminStageEmploiComponent } from 'app/admin-stage-emploi/admin-stage-em
 import { EvaluationCoursComponent } from 'app/evaluation-cours/evaluation-cours.component';
 import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-candidature.component';
 import { CandidatureComponent } from 'app/candidature/candidature.component';
+import { GestionOffresComponent } from 'app/gestion-offres/gestion-offres.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -96,4 +97,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'evaluation-cours',        component: EvaluationCoursComponent },
     { path: 'gestion-candidature',        component: GestionCandidatureComponent },
     { path: 'candidature',        component: CandidatureComponent },
+    { path: 'gestion-offres',        component: GestionOffresComponent },
 ];
