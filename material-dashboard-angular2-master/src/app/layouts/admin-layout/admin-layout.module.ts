@@ -39,6 +39,7 @@ import { ReleveNoteComponent } from 'app/releve-note/releve-note.component';
 import { GestionOffresComponent } from 'app/gestion-offres/gestion-offres.component';
 import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-candidature.component';
 import { CandidatureComponent } from 'app/candidature/candidature.component';
+import { CompteEtudiantComponent } from 'app/compte-etudiant/compte-etudiant.component';
 
 @NgModule({
   imports: [
@@ -83,6 +84,7 @@ import { CandidatureComponent } from 'app/candidature/candidature.component';
     GestionOffresComponent,
     GestionCandidatureComponent,
     CandidatureComponent,
+    CompteEtudiantComponent,
   ]
 })
 
