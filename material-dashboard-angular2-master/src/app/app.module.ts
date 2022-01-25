@@ -22,25 +22,7 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { AccueilComponent } from './accueil/accueil.component';
-import { ContactComponent } from './contact/contact.component';
-import { CampusComponent } from './campus/campus.component';
-import { ConnexionComponent } from './connexion/connexion.component';
-import { EcologieComponent } from './ecologie/ecologie.component';
-import { InternationalComponent } from './international/international.component';
-import { ListeCoursComponent } from './liste-cours/liste-cours.component';
-import { ProfilComponent } from './profil/profil.component';
-import { ListeEnseignantsComponent } from './liste-enseignants/liste-enseignants.component';
-import { EdtComponent } from './edt/edt.component';
-import { ReleveNoteComponent } from './releve-note/releve-note.component';
-import { DocumentsAdministratifsComponent } from './documents-administratifs/documents-administratifs.component';
-import { ExamenComponent } from './examen/examen.component';
-import { ForumComponent } from './forum/forum.component';
-import { OffresStageEmploiComponent } from './offres-stage-emploi/offres-stage-emploi.component';
-import { GestionComponent } from './gestion/gestion.component';
-import { CompteEtudiantComponent } from './compte-etudiant/compte-etudiant.component';
-import { MoyStatsComponent } from './moy-stats/moy-stats.component';
-import { AdminStageEmploiComponent } from './admin-stage-emploi/admin-stage-emploi.component';
+
 
 @NgModule({
   imports: [
@@ -58,23 +40,7 @@ import { AdminStageEmploiComponent } from './admin-stage-emploi/admin-stage-empl
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    CampusComponent,
-    ConnexionComponent,
-    EcologieComponent,
-    InternationalComponent,
-    ListeCoursComponent,
-    ProfilComponent,
-    ListeEnseignantsComponent,
-    EdtComponent,
-    ReleveNoteComponent,
-    DocumentsAdministratifsComponent,
-    ExamenComponent,
-    ForumComponent,
-    OffresStageEmploiComponent,
-    GestionComponent,
-    CompteEtudiantComponent,
-    MoyStatsComponent,
-    AdminStageEmploiComponent,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

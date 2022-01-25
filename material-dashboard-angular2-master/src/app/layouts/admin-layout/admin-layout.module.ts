@@ -19,6 +19,26 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import { ContactComponent } from 'app/contact/contact.component';
 import { AccueilComponent } from 'app/accueil/accueil.component';
+import { EvaluationCoursComponent } from 'app/evaluation-cours/evaluation-cours.component';
+import { AdminStageEmploiComponent } from 'app/admin-stage-emploi/admin-stage-emploi.component';
+import { CampusComponent } from 'app/campus/campus.component';
+import { ConnexionComponent } from 'app/connexion/connexion.component';
+import { DocumentsAdministratifsComponent } from 'app/documents-administratifs/documents-administratifs.component';
+import { EcologieComponent } from 'app/ecologie/ecologie.component';
+import { EdtComponent } from 'app/edt/edt.component';
+import { ExamenComponent } from 'app/examen/examen.component';
+import { ForumComponent } from 'app/forum/forum.component';
+import { GestionComponent } from 'app/gestion/gestion.component';
+import { InternationalComponent } from 'app/international/international.component';
+import { ListeCoursComponent } from 'app/liste-cours/liste-cours.component';
+import { ListeEnseignantsComponent } from 'app/liste-enseignants/liste-enseignants.component';
+import { MoyStatsComponent } from 'app/moy-stats/moy-stats.component';
+import { OffresStageEmploiComponent } from 'app/offres-stage-emploi/offres-stage-emploi.component';
+import { ProfilComponent } from 'app/profil/profil.component';
+import { ReleveNoteComponent } from 'app/releve-note/releve-note.component';
+import { GestionOffresComponent } from 'app/gestion-offres/gestion-offres.component';
+import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-candidature.component';
+import { CandidatureComponent } from 'app/candidature/candidature.component';
 
 @NgModule({
   imports: [
@@ -43,6 +63,26 @@ import { AccueilComponent } from 'app/accueil/accueil.component';
     UpgradeComponent,
     AccueilComponent,
     ContactComponent,
+    EvaluationCoursComponent,
+    AdminStageEmploiComponent,
+    CampusComponent,
+    ConnexionComponent,
+    DocumentsAdministratifsComponent,
+    EcologieComponent,
+    EdtComponent,
+    ExamenComponent,
+    ForumComponent,
+    GestionComponent,
+    InternationalComponent,
+    ListeCoursComponent,
+    ListeEnseignantsComponent,
+    MoyStatsComponent,
+    OffresStageEmploiComponent,
+    ProfilComponent,
+    ReleveNoteComponent,
+    GestionOffresComponent,
+    GestionCandidatureComponent,
+    CandidatureComponent,
   ]
 })
 

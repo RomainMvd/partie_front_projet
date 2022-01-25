@@ -27,6 +27,9 @@ import { GestionComponent } from 'app/gestion/gestion.component';
 import { MoyStatsComponent } from 'app/moy-stats/moy-stats.component';
 import { CompteEtudiantComponent } from 'app/compte-etudiant/compte-etudiant.component';
 import { AdminStageEmploiComponent } from 'app/admin-stage-emploi/admin-stage-emploi.component';
+import { EvaluationCoursComponent } from 'app/evaluation-cours/evaluation-cours.component';
+import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-candidature.component';
+import { CandidatureComponent } from 'app/candidature/candidature.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -90,5 +93,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'moy-stats',        component: MoyStatsComponent },
     { path: 'compte-etudiant',        component: CompteEtudiantComponent },
     { path: 'admin-stage-emplois',        component: AdminStageEmploiComponent },
-
+    { path: 'evaluation-cours',        component: EvaluationCoursComponent },
+    { path: 'gestion-candidature',        component: GestionCandidatureComponent },
+    { path: 'candidature',        component: CandidatureComponent },
 ];
