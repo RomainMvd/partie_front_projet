@@ -23,6 +23,10 @@ import { ReleveNoteComponent } from 'app/releve-note/releve-note.component';
 import { ForumComponent } from 'app/forum/forum.component';
 import { ListeEnseignantsComponent } from 'app/liste-enseignants/liste-enseignants.component';
 import { ListeCoursComponent } from 'app/liste-cours/liste-cours.component';
+import { GestionComponent } from 'app/gestion/gestion.component';
+import { MoyStatsComponent } from 'app/moy-stats/moy-stats.component';
+import { CompteEtudiantComponent } from 'app/compte-etudiant/compte-etudiant.component';
+import { AdminStageEmploiComponent } from 'app/admin-stage-emploi/admin-stage-emploi.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -82,4 +86,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'documentsadministratifs',        component: DocumentsAdministratifsComponent },
     { path: 'examenenligne',        component: ExamenComponent },
     { path: 'offresstageemplois',        component: OffresStageEmploiComponent },
+    { path: 'gestion',        component: GestionComponent },
+    { path: 'moy-stats',        component: MoyStatsComponent },
+    { path: 'compte-etudiant',        component: CompteEtudiantComponent },
+    { path: 'admin-stage-emplois',        component: AdminStageEmploiComponent },
+
 ];

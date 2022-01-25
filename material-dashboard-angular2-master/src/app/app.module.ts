@@ -37,6 +37,10 @@ import { DocumentsAdministratifsComponent } from './documents-administratifs/doc
 import { ExamenComponent } from './examen/examen.component';
 import { ForumComponent } from './forum/forum.component';
 import { OffresStageEmploiComponent } from './offres-stage-emploi/offres-stage-emploi.component';
+import { GestionComponent } from './gestion/gestion.component';
+import { CompteEtudiantComponent } from './compte-etudiant/compte-etudiant.component';
+import { MoyStatsComponent } from './moy-stats/moy-stats.component';
+import { AdminStageEmploiComponent } from './admin-stage-emploi/admin-stage-emploi.component';
 
 @NgModule({
   imports: [
@@ -67,6 +71,10 @@ import { OffresStageEmploiComponent } from './offres-stage-emploi/offres-stage-e
     ExamenComponent,
     ForumComponent,
     OffresStageEmploiComponent,
+    GestionComponent,
+    CompteEtudiantComponent,
+    MoyStatsComponent,
+    AdminStageEmploiComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

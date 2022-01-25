@@ -40,7 +40,18 @@
                 <p>{{menuItem.title}}</p>
             </a>
         </li>
-    
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    <i class="material-icons">manage_accounts</i>
+            <p>Gestion
+            </p>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/gestion'" >Accueil</a>                        
+            <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/compte-etudiant'" >Compte Etudiant</a>                        
+            <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/moy-stats'" >Moyenne et Stats</a>                        
+            <a class="dropdown-item" routerLinkActive="active" [routerLink]="'/admin-stage-emplois'" >Générer Offre Stage/Emploi</a> 
+        </div>
+    </li>
 
 
 </ul>

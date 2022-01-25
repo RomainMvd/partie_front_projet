@@ -14,6 +14,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/engagements-ecologiques', title: 'Engagements écologiques',  icon:'park', class: '' },
     { path: '/international', title: 'International',  icon:'flight', class: '' },
     { path: '/contact', title: 'Contact',  icon:'phone', class: '' },
+
 ];
 
 @Component({
