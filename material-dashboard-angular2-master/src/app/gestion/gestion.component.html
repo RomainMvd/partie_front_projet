@@ -1,1 +1,35 @@
-<p>gestion works!</p>
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header" style="background-color:rgb(40, 40, 83);">
+                <h2 class="card-title" style="color: white; font-weight: bold;">Tableau de bords</h2>
+
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="card-title">Gestion étudiant</h3>
+                        <div class="alert alert-danger alert-with-icon" data-notify="container"
+                            style="background: linear-gradient(110deg, rgb(33, 33, 151), royalblue, #fff);">
+                            <i class="material-icons" data-notify="icon">history_edu</i>
+                            <a routerLinkActive="active" [routerLink]="'/compte-etudiant'"
+                                style="font-size: large; font-weight: bold;"> Compte étudiant</a>
+                        </div>
+                        <div class="alert alert-danger alert-with-icon" data-notify="container"
+                            style="background: linear-gradient(110deg, rgb(33, 33, 151), royalblue, #fff);">
+                            <i class="material-icons" data-notify="icon">equalizer</i>
+                            <a routerLinkActive="active" [routerLink]="'/moy-stats'"
+                                style="font-size: large; font-weight: bold;">Moyenne et statistiques</a>
+                        </div>
+                        <div class="alert alert-danger alert-with-icon" data-notify="container"
+                            style="background: linear-gradient(110deg, rgb(33, 33, 151), royalblue, #fff);">
+                            <i class="material-icons" data-notify="icon">work</i>
+                            <a routerLinkActive="active" [routerLink]="'/documentsadministratifs'"
+                                style="font-size: large; font-weight: bold;">Offre stage et d'emploi</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
