@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Cours } from 'app/Modeles/cours';
+import { CoursService } from 'app/service/cours.service';
 declare const $: any;
 declare interface RouteInfo {
   path: string;
@@ -23,11 +25,16 @@ export const ROUTES: RouteInfo[] = [
   styleUrls: ['./liste-cours.component.css']
 })
 export class ListeCoursComponent implements OnInit {
-  matieres: any[];
+  courss:any;
+  cours : Cours = new Cours();
 
-  constructor() { }
+  constructor(private coursService: CoursService) { }
 
   ngOnInit() {
-    this.matieres = ROUTES.filter(matiere => matiere);
+    this.findAll();
+  }
+  findAll(){
+    console.log("Je suis le findAll du composant");
+    this.coursService.findAll().subscribe(data =>{this.coursService = data});
   }
 }
