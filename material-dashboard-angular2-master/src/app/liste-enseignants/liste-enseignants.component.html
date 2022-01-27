@@ -22,13 +22,14 @@
                                                 Nom
                                             </td>
                                             <td style="font-size: large; margin:auto">Prénom</td>
-                                            <td style="font-size: large; margin:auto">
-                                                Bureau
-                                            </td>
+                                            
                                             <td style="font-size: large; margin:auto">Email</td>
-                                            <td style="font-size: large; margin:auto">
-                                                Téléphone
-                                            </td>
+                                            
+                                        </tr>
+                                        <tr *ngFor="let enseignant of enseignants">
+                                            <td><p>{{enseignant.nomPersonne}}</p></td>
+                                            <td><p>{{enseignant.prenomPersonne}}</p></td>
+                                            <td><p>{{enseignant.email}}</p></td>
                                         </tr>
                                         <tr>
                                         <td style="font-size: large; margin:auto">  

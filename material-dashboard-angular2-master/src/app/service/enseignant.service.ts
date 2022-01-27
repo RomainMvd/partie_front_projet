@@ -12,6 +12,8 @@ export class EnseignantService {
   constructor(private httpClient:HttpClient) { }
 
   public findAll() : Observable<any>{
+    console.log("Je suis le findAll");
+    console.log(this.httpClient.get(this.baseUrl));
     return this.httpClient.get(this.baseUrl);
   }
 
