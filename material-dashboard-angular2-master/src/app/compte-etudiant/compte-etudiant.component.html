@@ -52,6 +52,7 @@
                 </form>
             </div>
         </div>
+        <div class="card">
         <div class="card-header"
             style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">
             <h3 class="card-title" style="color:#fff;"><b>Liste étudiants</b></h3>
@@ -68,6 +69,8 @@
                                 <td style="font-size: large; margin:auto">Prénom</td>
 
                                 <td style="font-size: large; margin:auto">Date de naissance</td>
+                                <td style="font-size: large; margin:auto">Username</td>
+
                                 <td style="font-size: large; margin:auto">Email</td>
                             </tr>
                             <tr *ngFor="let etu of etudiants">
@@ -84,6 +87,9 @@
                                     <p>{{etu.dateNaissancePersonne}}</p>
                                 </td>
                                 <td>
+                                    <p>{{etu.username}}</p>
+                                </td>
+                                <td>
                                     <p>{{etu.email}}</p>
                                 </td>
                             </tr>
@@ -93,4 +99,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
