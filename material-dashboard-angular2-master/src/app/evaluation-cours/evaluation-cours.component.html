@@ -11,11 +11,11 @@
                         <div class="col-md-12">
                                 <div class="rating">
                                     <div class="stars">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star" ngClick="noterCours(1)"></i>
+                                        <i class="fa fa-star" ngClick="noterCours(2)"></i>
+                                        <i class="fa fa-star" ngClick="noterCours(3)"></i>
+                                        <i class="fa fa-star" ngClick="noterCours(4)"></i>
+                                        <i class="fa fa-star" ngClick="noterCours(5)"></i>
                                     </div>
                                 </div>
                         </div>
@@ -25,7 +25,7 @@
                                 <textarea matInput placeholder="  Commentaires..." type="text" style="padding-bottom: 100px;width:100%; margin-top:20px; border-width: 1px; border-style: solid; border-color: grey;"></textarea>
                             </div>
                     </div>
-                    <button mat-raised-button type="submit" class="btn pull-right" style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">Valider</button>
+                    <button mat-raised-button type="submit" class="btn pull-right" click="saveEvaluation()" style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">Valider</button>
                 </form>
             </div>
         </div>

@@ -1,0 +1,35 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-tabs card-header-primary"
+                        style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <h3 style="color: #fff;">{{matiere.title}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="profile">
+                                <table class="table">
+                                    <tbody >
+                                        <tr>
+                                            <td style="font-size: large; margin:auto">
+                                                Intitulé
+                                            </td>
+                                            <td>Fichiers</td>
+                                        </tr>
+                                        <tr *ngFor="let sujet of sujets">{{file.name}}</tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

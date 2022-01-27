@@ -13,6 +13,7 @@
                     </div>
 
                     <div class="card-body">
+<<<<<<< HEAD
                         <div class="tab-content">
                             <div class="tab-pane active" id="profile">
                                 <table class="table">
@@ -54,6 +55,24 @@
                                     </tbody>
                                 </table>
                             </div>
+=======
+                        <div class="table-responsive">
+                            <table class="table table-hover" style="background: linear-gradient(110deg, rgb(33, 33, 151), royalblue, #fff);">
+                                <tr routerLinkActive="active" *ngFor="let matiere of matieres" style=" padding: 20px;border-bottom-style:solid; border-bottom-width:15px; border-color:aliceblue;">
+                                    <td style="table-layout:auto; width:33%;">
+                                        <a [routerLink]="[matiere.path]" ng-click="afficherMatiere({{matiere.title}})">
+                                            <p style="font-size: large; font-weight: bold; color:#fff;margin:auto;">{{matiere.title}}</p>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <p style="color:#fff;margin:auto;">Prof</p>
+                                    </td>
+                                    <td>
+                                        <button mat-raised-button type="submit" class="btn pull-right" routerLinkActive="active" [routerLink]="'/evaluation-cours'" style="background:linear-gradient(110deg,midnightblue,rgb(33, 33, 151));">Evaluer</button>
+                                    </td>
+                                </tr>
+                            </table>
+>>>>>>> 35be5d30e3d4a148cf71d29d15534804404ae5ab
                         </div>
                     </div>
                 </div>
