@@ -6,27 +6,34 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EtudiantService {
-  private baseUrl = "";
+  private baseUrl = "http://localhost:8080/etudiants";
 
   constructor(private httpClient:HttpClient) { }
 
   public findAll() : Observable<any>{
     return this.httpClient.get(this.baseUrl);
   }
-  public delete(id:number):Observable<any>{
+  public deleteEtudiant(id:number):Observable<any>{
     return this.httpClient.delete(this.baseUrl+"/"+id);
   }
-  public save(file:File, user: any): Observable<any>{
+  public saveEtudiant(file:File, etudiant: any): Observable<any>{
     const formData: FormData = new FormData();
-    formData.append('nom', user.nomPersonne);
-    formData.append('prenom', user.prenomPersonne);
-    formData.append('username',user.username);
-    formData.append('password',user.password);
-    formData.append('email', user.email);
-    formData.append('moyenne', user.moyenne);
-    formData.append('date de naissance', user.dateNaissance);
+    formData.append('nom', etudiant.nomPersonne);
+    formData.append('prenom', etudiant.prenomPersonne);
+    formData.append('username',etudiant.username);
+    formData.append('password',etudiant.password);
+    formData.append('email', etudiant.email);
+    formData.append('moyenne', etudiant.moyenne);
+    formData.append('date de naissance', etudiant.dateNaissance);
     formData.append('photo',file);
     const req = new HttpRequest('POST',this.baseUrl,formData, {reportProgress: true, responseType: 'text'});
     return this.httpClient.request(req);
+  }
+  public getEtudiant(id:number):Observable<any>{
+    return this.httpClient.get(this.baseUrl+'/'+id);
+  }
+  public updateEtudiant(etudiant:any):Observable<any>{
+    var userParse = JSON.parse(etudiant);
+    return this.httpClient.put(this.baseUrl+'/'+userParse.idPersonne,userParse);
   }
 }

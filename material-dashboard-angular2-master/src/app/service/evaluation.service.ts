@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EvaluationService {
-  private baseUrl = "";
+  private baseUrl = "http://localhost:8080/evaluations";
 
   constructor(private httpClient:HttpClient) { }
 
@@ -15,14 +15,21 @@ export class EvaluationService {
     return this.httpClient.get(this.baseUrl);
   }
 
-  public delete(id:number):Observable<any>{
+  public deleteEvaluation(id:number):Observable<any>{
     return this.httpClient.delete(this.baseUrl+"/"+id);
   }
-  public save(evaluation:any): Observable<any>{
+  public saveEvaluation(evaluation:any): Observable<any>{
     const formData: FormData = new FormData();
     formData.append('commentaire', evaluation.commentaire);
     formData.append('Note du cours', evaluation.noteCours);
     const req = new HttpRequest('POST',this.baseUrl,formData, {reportProgress: true, responseType: 'text'});
     return this.httpClient.request(req);
+  }
+  public getEvaluation(id:number):Observable<any>{
+    return this.httpClient.get(this.baseUrl+'/'+id);
+  }
+  public updateEvaluation(evaluation:any):Observable<any>{
+    var userParse = JSON.parse(evaluation);
+    return this.httpClient.put(this.baseUrl+'/'+userParse.idEvaluation,userParse);
   }
 }
