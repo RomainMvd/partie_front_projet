@@ -18,7 +18,7 @@
                         </button>
 
                     </div>
-
+                    
                     <div class="progress">
 
                         <mat-progress-bar class="progress-bar" mode="determinate"
@@ -29,6 +29,64 @@
                         <i class="cancel-upload" (click)="cancelUpload()" 
                                     *ngIf="uploadProgress">delete_forever</i>
 
+                    </div>
+                    <div class="card-header card-header-tabs card-header-primary"
+                        style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <h3 style="color: #fff;">Liste des examens</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="profile">
+                                <table class="table">
+                                    <tbody >
+                                        <tr>
+                                            <td style="font-size: large; margin:auto">Nom Examen                                          
+                                            </td>
+                                            <td style="font-size: large; margin:auto">Durée</td>
+                                            
+                                            <td style="font-size: large; margin:auto">Date Examen</td>
+
+                                            <td style="font-size: large; margin:auto">Fichier Examen</td>
+
+                                            <td style="font-size: large; margin:auto">Fichier Réponses</td>
+                                            
+                                        </tr>
+                                        <tr *ngFor="let examen of examens">
+                                            <td><p>{{examen.nomExamen}}</p></td>
+                                            <td><p>{{examen.duree}}</p></td>
+                                            <td><p>{{examen.dateExamen}}</p></td>
+                                            <td><p>{{examen.fichierExamen}}</p></td>
+                                            <td><p>{{examen.fichierReponseExamen}}</p></td>
+                                        </tr>
+                                        <tr>
+                                        <td style="font-size: large; margin:auto">  
+                                            </td>
+                                            <td class="td-actions text-right">
+                                            </td>
+                                            <td style="font-size: large; margin:auto"></td>
+                                            <td class="td-actions text-right">
+                                            </td>
+                                            <td style="font-size: large; margin:auto">
+                                            </td>
+                                            <td class="td-actions text-right">
+                                            </td>
+                                            <td style="font-size: large; margin:auto"></td>
+                                            <td class="td-actions text-right">
+                                            </td>
+                                            <td style="font-size: large; margin:auto">
+                                            </td>
+                                            <td class="td-actions text-right">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
