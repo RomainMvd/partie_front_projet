@@ -32,6 +32,6 @@ export class ClasseService {
   }
   public updateClasse(classe:any):Observable<any>{
     var userParse = JSON.parse(classe);
-    return this.httpClient.put(this.baseURL+'/'+userParse.idUtilisateur,userParse);
+    return this.httpClient.put(this.baseURL+'/'+userParse.idClasse,userParse);
   }
 }
