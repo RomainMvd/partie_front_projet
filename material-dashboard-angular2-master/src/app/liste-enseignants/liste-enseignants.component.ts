@@ -10,9 +10,7 @@ import { EnseignantService } from 'app/service/enseignant.service';
 export class ListeEnseignantsComponent implements OnInit {
   enseignants:any;
   enseignant : Enseignant = new Enseignant();
-  // nom?:string;
-  // prenom?:string;
-  // email?:string;
+  
   constructor(private enseignantService: EnseignantService) { }
 
   ngOnInit(): void {
