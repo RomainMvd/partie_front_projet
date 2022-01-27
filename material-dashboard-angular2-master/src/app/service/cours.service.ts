@@ -11,6 +11,7 @@ export class CoursService {
   constructor(private httpClient:HttpClient) { }
   
   public findAll() : Observable<any>{
+    console.log("Je suis le findAll du service");
     return this.httpClient.get(this.baseURL);
   }
   
