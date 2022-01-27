@@ -6,7 +6,7 @@
                 <h3 class="card-title" style="color:#fff;"><b>Créer un compte étudiant</b></h3>
             </div>
             <div class="card-body">
-                <form>
+                <form (ngSubmit)="saveEtudiant()">
                     <div class="row">
                         <div class="col-md-4">
                             <mat-form-field class="example-full-width">
@@ -91,6 +91,10 @@
                                 </td>
                                 <td>
                                     <p>{{etu.email}}</p>
+                                </td>
+                                <td>
+                                    <button mat-raised-button type="button" (click)="deleteEtudiant(etu.idPersonne)" class="btn pull-right"
+                        style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">Supprimer</button>
                                 </td>
                             </tr>
                         </tbody>
