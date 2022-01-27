@@ -1,1 +1,37 @@
-<p>examen works!</p>
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <input type="file" class="file-input"
+                        [accept]="requiredFileType"
+                        (change)="onFileSelected($event)" #fileUpload>
+
+                    <div class="file-upload">
+
+                    {{fileName || "No file uploaded yet."}}
+
+                        <button mat-mini-fab color="primary" class="upload-btn"
+                        (click)="fileUpload.click()">
+                            <i>attach_file</i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <mat-progress-bar class="progress-bar" mode="determinate"
+                                            [value]="uploadProgress" *ngIf="uploadProgress">
+
+                        </mat-progress-bar>
+
+                        <i class="cancel-upload" (click)="cancelUpload()" 
+                                    *ngIf="uploadProgress">delete_forever</i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
