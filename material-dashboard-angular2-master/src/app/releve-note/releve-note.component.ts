@@ -12,7 +12,7 @@ export class ReleveNoteComponent implements OnInit {
   courss: any;
   cours: Cours= new Cours();
   etudiant: Etudiant=new Etudiant();
-
+  
   constructor(private coursService: CoursService) { }
 
   ngOnInit(): void {
