@@ -28,6 +28,7 @@ export class CompteEtudiantComponent implements OnInit {
   }
 
   saveEtudiant(){
+    console.log("test bug")
     this.etudiantService.saveEtudiant(this.etudiant).subscribe(() => {
       this.findAll();
       this.etudiant = new Etudiant ();
