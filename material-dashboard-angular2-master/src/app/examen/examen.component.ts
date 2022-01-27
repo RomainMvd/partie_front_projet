@@ -48,12 +48,12 @@ export class ExamenComponent implements OnInit {
             })
         }
     }
-*/
+
   cancelUpload() {
     this.uploadSub.unsubscribe();
     this.reset();
   }
-
+*/
   reset() {
     this.uploadProgress = null;
     this.uploadSub = null;
