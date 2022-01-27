@@ -37,7 +37,7 @@
                         </div>
                         <div class="col-md-6">
                             <mat-form-field class="example-full-width">
-                                <input matInput placeholder="Password" type="text" required
+                                <input matInput placeholder="Password" type="password" required
                                     [(ngModel)]="etudiant.password">
                             </mat-form-field>
                         </div>
@@ -73,27 +73,27 @@
 
                                 <td style="font-size: large; margin:auto">Email</td>
                             </tr>
-                            <tr *ngFor="let etu of etudiants">
+                            <tr *ngFor="let etudiant of etudiants">
                                 <td>
-                                    <p>{{etu.idPersonne}}</p>
+                                    <p>{{etudiant.idPersonne}}</p>
                                 </td>
                                 <td>
-                                    <p>{{etu.nomPersonne}}</p>
+                                    <p>{{etudiant.nomPersonne}}</p>
                                 </td>
                                 <td>
-                                    <p>{{etu.prenomPersonne}}</p>
+                                    <p>{{etudiant.prenomPersonne}}</p>
                                 </td>
                                 <td>
-                                    <p>{{etu.dateNaissancePersonne}}</p>
+                                    <p>{{etudiant.dateNaissancePersonne}}</p>
                                 </td>
                                 <td>
-                                    <p>{{etu.username}}</p>
+                                    <p>{{etudiant.username}}</p>
                                 </td>
                                 <td>
-                                    <p>{{etu.email}}</p>
+                                    <p>{{etudiant.email}}</p>
                                 </td>
                                 <td>
-                                    <button mat-raised-button type="button" (click)="deleteEtudiant(etu.idPersonne)" class="btn pull-right"
+                                    <button mat-raised-button type="button" (click)="deleteEtudiant(etudiant.idPersonne)" class="btn pull-right"
                         style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">Supprimer</button>
                                 </td>
                             </tr>

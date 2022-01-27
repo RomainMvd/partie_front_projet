@@ -34,5 +34,4 @@ export class CompteEtudiantComponent implements OnInit {
       this.etudiant = new Etudiant ();
     })
   }
-
 }
