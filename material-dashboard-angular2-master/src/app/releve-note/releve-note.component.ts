@@ -10,18 +10,15 @@ import { Etudiant } from '../Modeles/etudiant';
 })
 export class ReleveNoteComponent implements OnInit {
   courss: any;
-  cours: Cours= new Cours;
-
-  constructor(private coursService: CoursService, private etudiant: Etudiant) { }
+  cours: Cours= new Cours();
+  etudiant: Etudiant=new Etudiant();
+  
+  constructor(private coursService: CoursService) { }
 
   ngOnInit(): void {
     this.findAll();
   }
   findAll(){
     this.coursService.findAll().subscribe(data =>{this.courss = data});
-  }
-
-  afficherMoyenne(){
-    this.etudiant.moyenne;
   }
 }

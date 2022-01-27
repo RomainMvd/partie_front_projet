@@ -19,17 +19,26 @@
                                     <tbody >
                                         <tr>
                                             <td style="font-size: large; margin:auto">Nom</td>
-                                            <td style="font-size: large; margin:auto">Sujet</td>
                                             <td style="font-size: large; margin:auto">Prénom</td>
+                                            <td style="font-size: large; margin:auto">Email</td>
                                             <td style="font-size: large; margin:auto">Poste</td>
-                                            <td style="font-size: large; margin:auto"></td>
+                                            <td style="font-size: large; margin:auto">CV</td>
+                                            <td style="font-size: large; margin:auto">Lettre motivation</td>
+
                                         </tr>
-                                        <tr>
-                                            <td style="font-size: large; margin:auto"></td>
-                                            <td class="td-actions text-left; margin:auto"></td>
-                                            <td style="font-size: large; margin:auto"></td>
-                                            <td class="td-actions text-left; margin:auto"></td>
-                                            <td style="margin:auto">Voir</td>
+                                        <tr *ngFor="let c of candidats">
+                                            <td style="font-size: large; margin:auto">{{c.nomPersonne}}</td>
+                                            <td class="td-actions text-left; margin:auto">{{c.prenomPersonne}}</td>
+                                            <td style="font-size: large; margin:auto">{{c.email}}</td>
+                                            <td style="font-size: large; margin:auto">{{c.posteRecherche}}</td>
+
+                                            <td class="td-actions text-left; margin:auto"><iframe src="{{c.cV}}"></iframe></td>
+                                            <td class="td-actions text-left; margin:auto"><iframe src="{{c.lettreMotivation}}"></iframe></td>
+                                            <td>
+                                                <button mat-raised-button type="button" (click)="deleteCandidat(c.idPersonne)" class="btn pull-right"
+                                    style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">Supprimer</button>
+                                            </td>
+
                                         </tr>
                                     </tbody>
                                 </table>
