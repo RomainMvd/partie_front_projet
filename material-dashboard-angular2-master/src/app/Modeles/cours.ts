@@ -1,6 +1,6 @@
 export class Cours {
     idCours?:number;
-    nomCOurs?:string;
+    nomCours?:string;
     nomMatiere?:string;
     nbrHeure?:number;
 }
