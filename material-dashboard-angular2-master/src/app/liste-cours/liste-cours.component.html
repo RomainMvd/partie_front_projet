@@ -11,7 +11,7 @@
                             <table class="table table-hover" style="background: linear-gradient(110deg, rgb(33, 33, 151), royalblue, #fff);">
                                 <tr routerLinkActive="active" *ngFor="let matiere of matieres" style=" padding: 20px;border-bottom-style:solid; border-bottom-width:15px; border-color:aliceblue;">
                                     <td style="table-layout:auto; width:33%;">
-                                        <a [routerLink]="[matiere.path]">
+                                        <a [routerLink]="[matiere.path]" ng-click="afficherMatiere({{matiere.title}})">
                                             <p style="font-size: large; font-weight: bold; color:#fff;margin:auto;">{{matiere.title}}</p>
                                         </a>
                                     </td>

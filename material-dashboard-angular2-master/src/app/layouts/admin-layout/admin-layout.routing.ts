@@ -1,13 +1,5 @@
 import { Routes } from '@angular/router';
 
-import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
-import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { AccueilComponent } from 'app/accueil/accueil.component';
 import { ContactComponent } from 'app/contact/contact.component';
 import { CampusComponent } from 'app/campus/campus.component';
@@ -31,50 +23,10 @@ import { EvaluationCoursComponent } from 'app/evaluation-cours/evaluation-cours.
 import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-candidature.component';
 import { CandidatureComponent } from 'app/candidature/candidature.component';
 import { GestionOffresComponent } from 'app/gestion-offres/gestion-offres.component';
+import { MatiereComponent } from 'app/matiere/matiere.component';
 
 export const AdminLayoutRoutes: Routes = [
-    // {
-    //   path: '',
-    //   children: [ {
-    //     path: 'dashboard',
-    //     component: DashboardComponent
-    // }]}, {
-    // path: '',
-    // children: [ {
-    //   path: 'userprofile',
-    //   component: UserProfileComponent
-    // }]
-    // }, {
-    //   path: '',
-    //   children: [ {
-    //     path: 'icons',
-    //     component: IconsComponent
-    //     }]
-    // }, {
-    //     path: '',
-    //     children: [ {
-    //         path: 'notifications',
-    //         component: NotificationsComponent
-    //     }]
-    // }, {
-    //     path: '',
-    //     children: [ {
-    //         path: 'maps',
-    //         component: MapsComponent
-    //     }]
-    // }, {
-    //     path: '',
-    //     children: [ {
-    //         path: 'typography',
-    //         component: TypographyComponent
-    //     }]
-    // }, {
-    //     path: '',
-    //     children: [ {
-    //         path: 'upgrade',
-    //         component: UpgradeComponent
-    //     }]
-    // }
+ 
     { path: 'accueil',      component: AccueilComponent },
     { path: 'connexion',   component: ConnexionComponent },
     { path: 'international',          component: InternationalComponent },
@@ -98,4 +50,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'gestion-candidature',        component: GestionCandidatureComponent },
     { path: 'candidature',        component: CandidatureComponent },
     { path: 'gestion-offres',        component: GestionOffresComponent },
+    { path: 'matiere',        component: MatiereComponent },
 ];

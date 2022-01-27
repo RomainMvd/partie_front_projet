@@ -18,32 +18,16 @@
                             <table class="table table-hover">
                                 <thead class="">
                                     <th>
+                                        Moyenne générale
+                                    </th>
+                                    <th>
                                         Intitulé
-                                    </th>
-                                    <th>
-                                        Note
-                                    </th>
-                                    <th>
-                                        Note la plus basse
-                                    </th>
-                                    <th>
-                                        Note moyenne
-                                    </th>
-                                    <th>
-                                        Note la plus haute
-                                    </th>
-                                    <th>
-                                        Ecart-type
                                     </th>
                                 </thead>
                                 <tbody>
-                                    <tr *ngFor="let matiere of matieres">
-                                        <td><p>{{matiere.title}}</p></td>
-                                        <td><p>{{matiere.title}}</p></td>
-                                        <td><p>{{matiere.title}}</p></td>
-                                        <td><p>{{matiere.title}}</p></td>
-                                        <td><p>{{matiere.title}}</p></td>
-                                        <td><p>{{matiere.title}}</p></td>
+                                    <tr afficherMoyenne()></tr>
+                                    <tr *ngFor="let cours of courss">
+                                        <td><p>{{cours.nomMatiere}}</p></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -51,14 +35,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12" *ngFor="matiere of matieres">
+            <!-- <div class="col-md-12" *ngFor="cours of courss">
                 <div class="card">
                     <div class="card-header" style="background-color:rgb(40, 40, 83);">
-                        <h4 class="card-title mt-0" style="color:#fff">{{matiere.title}}</h4>
-                        <p class="card-category" style="color:#fff">{{matiere.moyenne}}</p>
+                        <h4 class="card-title mt-0" style="color:#fff">{{cours.nomMatiere}}</h4>
                     </div>
                     <div class="card-body">
-                        <div class="table-responsive">
+                        <div class="table-responsive">  
                             <table class="table">
                                 <thead class=" text-primary">
                                     <th style="margin:auto; width:33%">
@@ -77,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
   </div>

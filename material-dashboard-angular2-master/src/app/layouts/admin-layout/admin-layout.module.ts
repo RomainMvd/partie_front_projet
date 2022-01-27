@@ -9,7 +9,6 @@ import { TableListComponent } from '../../table-list/table-list.component';
 import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -40,6 +39,7 @@ import { GestionOffresComponent } from 'app/gestion-offres/gestion-offres.compon
 import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-candidature.component';
 import { CandidatureComponent } from 'app/candidature/candidature.component';
 import { CompteEtudiantComponent } from 'app/compte-etudiant/compte-etudiant.component';
+import { MatiereComponent } from 'app/matiere/matiere.component';
 
 @NgModule({
   imports: [
@@ -85,6 +85,7 @@ import { CompteEtudiantComponent } from 'app/compte-etudiant/compte-etudiant.com
     GestionCandidatureComponent,
     CandidatureComponent,
     CompteEtudiantComponent,
+    MatiereComponent,
   ]
 })
 
