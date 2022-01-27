@@ -16,7 +16,7 @@ export class EtudiantService {
   public deleteEtudiant(id:number):Observable<any>{
     return this.httpClient.delete(this.baseUrl+"/"+id);
   }
-  public saveEtudiant(file:File, etudiant: any): Observable<any>{
+  public saveEtudiant(/*file:File,*/ etudiant: any): Observable<any>{
     const formData: FormData = new FormData();
     formData.append('nom', etudiant.nomPersonne);
     formData.append('prenom', etudiant.prenomPersonne);
@@ -25,7 +25,7 @@ export class EtudiantService {
     formData.append('email', etudiant.email);
     formData.append('moyenne', etudiant.moyenne);
     formData.append('date de naissance', etudiant.dateNaissance);
-    formData.append('photo',file);
+    // formData.append('photo',file);
     const req = new HttpRequest('POST',this.baseUrl,formData, {reportProgress: true, responseType: 'text'});
     return this.httpClient.request(req);
   }
