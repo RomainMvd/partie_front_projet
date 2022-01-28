@@ -24,6 +24,7 @@ import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-can
 import { CandidatureComponent } from 'app/candidature/candidature.component';
 import { GestionOffresComponent } from 'app/gestion-offres/gestion-offres.component';
 import { MatiereComponent } from 'app/matiere/matiere.component';
+import { GestionUtilisateursComponent } from 'app/gestion-utilisateurs/gestion-utilisateurs.component';
 
 export const AdminLayoutRoutes: Routes = [
  
@@ -51,4 +52,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'candidature',        component: CandidatureComponent },
     { path: 'gestion-offres',        component: GestionOffresComponent },
     { path: 'matiere',        component: MatiereComponent },
+    { path: 'gestion-utilisateurs', component: GestionUtilisateursComponent},
 ];

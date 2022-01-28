@@ -40,6 +40,8 @@ import { GestionCandidatureComponent } from 'app/gestion-candidature/gestion-can
 import { CandidatureComponent } from 'app/candidature/candidature.component';
 import { CompteEtudiantComponent } from 'app/compte-etudiant/compte-etudiant.component';
 import { MatiereComponent } from 'app/matiere/matiere.component';
+import { LoginComponent } from 'app/login/login.component';
+import { GestionUtilisateursComponent } from 'app/gestion-utilisateurs/gestion-utilisateurs.component';
 
 @NgModule({
   imports: [
@@ -86,6 +88,8 @@ import { MatiereComponent } from 'app/matiere/matiere.component';
     CandidatureComponent,
     CompteEtudiantComponent,
     MatiereComponent,
+    LoginComponent,
+    GestionUtilisateursComponent,
   ]
 })
 
