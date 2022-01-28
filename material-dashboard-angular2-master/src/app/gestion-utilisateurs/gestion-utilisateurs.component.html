@@ -12,14 +12,22 @@
                 <label class="col-md-3 col-form-label" for="text-input">Nom</label>
                 <div class="col-md-9">
                   <input type="text" id="text-input" name="nom" class="form-control"
+<<<<<<< HEAD
                     [(ngModel)]="personne.nomPersonne" placeholder="nom...">
+=======
+                    [(ngModel)]="utilisateur.nomPersonne" placeholder="nom...">
+>>>>>>> 32b746cfcf1237eb85687aee94b2504903820ca2
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-md-3 col-form-label" for="text-input">Prénom</label>
                 <div class="col-md-9">
                   <input type="text" id="text-input" name="prenom" class="form-control"
+<<<<<<< HEAD
                     [(ngModel)]="personne.prenomPersonne" placeholder="prénom...">
+=======
+                    [(ngModel)]="utilisateur.prenomPersonne" placeholder="prénom...">
+>>>>>>> 32b746cfcf1237eb85687aee94b2504903820ca2
                 </div>
               </div>
               <div class="form-group row">
@@ -48,21 +56,6 @@
         </div>
       </div>
     </div>
-    <!--<div class="row">
-      <div class="col-lg-12">
-         <div style="width: 300px;">
-            <form (ngSubmit)="onSubmit()">
-              <div class="form-group">
-                <label>Nom</label>
-                <input type="text" class="form-control" id="nom" name="nom" required [(ngModel)]="nom">
-              </div>
-              <div>
-                <button type="submit" class="btn btn-block btn-success">Submit</button>
-              </div>
-            </form>
-         </div>
-      </div>
-    </div>-->
     <div class="row">
       <div class="col-lg-12">
         <div class="card">
@@ -86,8 +79,13 @@
                   <td>{{u.prenomPersonne}}</td>
                   <td>{{u.username}}</td>
                   <td>{{u.password}}</td>
+<<<<<<< HEAD
                   <td><img src="data:image/jpeg;base64,{{u.image}}" height="" width="" /></td>
                   <td><button (click)="deletePersonne(u.idPersonne)">Delete</button>
+=======
+                  <td><img src="data:image/jpeg;base64,{{u.photoProfil}}" height="" width="" /></td>
+                  <td><button (click)="deleteUtilisateur(u.idPersonne)">Delete</button>
+>>>>>>> 32b746cfcf1237eb85687aee94b2504903820ca2
                       <button (click)="editUser(u)">Editer</button>
                   </td>
                 </tr>
