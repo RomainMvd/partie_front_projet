@@ -10,11 +10,16 @@ export class CandidatService {
 
   constructor(private httpClient:HttpClient) { }
 
+  public findAll() : Observable<any>{
+    return this.httpClient.get(this.baseURL);
+  }
+
   public saveCandidat(file:File, candidat: any): Observable<any>{
     const formData: FormData = new FormData();
     formData.append('nom', candidat.nomPersonne);
     formData.append('prenom', candidat.prenomPersonne);
     formData.append('email',candidat.email);
+    formData.append('password',candidat.password);
     formData.append('poste convoité',candidat.posteConvoite);
     formData.append('lettre de motivation',candidat.lettreMotivation);
     formData.append('CV',candidat.cV);
