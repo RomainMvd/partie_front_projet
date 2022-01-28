@@ -17,7 +17,7 @@ export class AppService {
         authorization : 'Basic ' + btoa(credentials.username + ':' + credentials.password)
       } : {}
     );
-    this.httpClient.get('http://localhost:9090/login/user', {headers: headers}).subscribe(response => {
+    this.httpClient.get('http://localhost:8080/login/user', {headers: headers}).subscribe(response => {
     this.responseAll = response; 
     if(this.responseAll['username']){
         this.authenticated = true;

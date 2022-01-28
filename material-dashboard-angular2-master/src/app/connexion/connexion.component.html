@@ -11,12 +11,12 @@
             <form action="verification.php" method="POST">
                 <h1 style="border-bottom-style:solid;  border-image: linear-gradient(110deg, #fff, rgb(128, 165, 235), midnightblue) 1;">Connexion</h1>
                 <label style="padding-top:36px;"><b>Nom d'utilisateur</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                <input type="text" class="form-control" [(ngModel)]="credentials.username" name="username" placeholder="Username" autocomplete="username" required>
 
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" class="form-control"  [(ngModel)]="credentials.password" name="password" placeholder="Password" autocomplete="current-password" required>
 
-                <input type="submit" id='submit' value='LOGIN' >
+                <input type="submit" id='submit' value='LOGIN' ngClick="login()">
             </form>
         </div>
     </body>
