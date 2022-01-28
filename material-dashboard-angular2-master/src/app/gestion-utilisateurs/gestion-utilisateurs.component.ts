@@ -5,7 +5,7 @@ import { Personne } from 'app/Modeles/personne';
 import { UtilisateurService } from 'app/service/utilisateur.service';
 
 @Component({
-  templateUrl: 'forms.component.html'
+  templateUrl: 'gestion-utilisateurs.component.html'
 })
 export class GestionUtilisateursComponent implements OnInit {
   Personnes: any;

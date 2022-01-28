@@ -32,7 +32,11 @@
                             <input matInput placeholder="Email" type="text" required [(ngModel)]="candidat.email">
                             </mat-form-field>
                         </div>
-                        
+                        <div class="col-md-12">
+                            <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Password" type="text" required [(ngModel)]="candidat.password">
+                            </mat-form-field>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -54,7 +58,8 @@
                       <input type="file" id="lm" name="lm" [(ngModel)]="candidat.lettreMotivation">
                     </div>
                    </form>
-                   <button mat-raised-button type="submit" (click)="saveCandidat()" class="btn pull-right" style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">Valider</button>
+                   <button mat-raised-button type="button" (click)="saveCandidat()" class="btn pull-right"
+                        style="background: linear-gradient(110deg, midnightblue, royalblue, rgb(128, 165, 235));">Valider</button>
 
             </div>
         </div>

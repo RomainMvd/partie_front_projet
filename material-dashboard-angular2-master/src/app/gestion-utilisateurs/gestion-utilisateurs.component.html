@@ -7,33 +7,33 @@
             Ajouter un utilisateur
           </div>
           <div class="card-body">
-            <form (ngSubmit)="saveUtilisateur()">
+            <form (ngSubmit)="savePersonne()">
               <div class="form-group row">
                 <label class="col-md-3 col-form-label" for="text-input">Nom</label>
                 <div class="col-md-9">
                   <input type="text" id="text-input" name="nom" class="form-control"
-                    [(ngModel)]="utilisateur.nomUtilisateur" placeholder="nom...">
+                    [(ngModel)]="personne.nomPersonne" placeholder="nom...">
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-md-3 col-form-label" for="text-input">Prénom</label>
                 <div class="col-md-9">
                   <input type="text" id="text-input" name="prenom" class="form-control"
-                    [(ngModel)]="utilisateur.prenomUtilisateur" placeholder="prénom...">
+                    [(ngModel)]="personne.prenomPersonne" placeholder="prénom...">
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-md-3 col-form-label" for="text-input">Username</label>
                 <div class="col-md-9">
                   <input type="text" id="text-input" name="username" class="form-control"
-                    [(ngModel)]="utilisateur.username" placeholder="username...">
+                    [(ngModel)]="personne.username" placeholder="username...">
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-md-3 col-form-label" for="text-input">Password</label>
                 <div class="col-md-9">
                   <input type="text" id="text-input" name="password" class="form-control"
-                    [(ngModel)]="utilisateur.password" placeholder="password...">
+                    [(ngModel)]="personne.password" placeholder="password...">
                 </div>
               </div>
               <div class="form-group row">
@@ -81,13 +81,13 @@
                 </tr>
               </thead>
            <tbody [hidden]="!log()">
-                <tr *ngFor="let u of utilisateurs">
-                  <td>{{u.nomUtilisateur}}</td>
-                  <td>{{u.prenomUtilisateur}}</td>
+                <tr *ngFor="let u of personnes">
+                  <td>{{u.nomPersonne}}</td>
+                  <td>{{u.prenomPersonne}}</td>
                   <td>{{u.username}}</td>
                   <td>{{u.password}}</td>
                   <td><img src="data:image/jpeg;base64,{{u.image}}" height="" width="" /></td>
-                  <td><button (click)="deleteUtilisateur(u.idUtilisateur)">Delete</button>
+                  <td><button (click)="deletePersonne(u.idPersonne)">Delete</button>
                       <button (click)="editUser(u)">Editer</button>
                   </td>
                 </tr>
